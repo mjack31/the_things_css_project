@@ -1,0 +1,191 @@
+@keyframes showFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes showFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes showFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  /* 16px * 62.5% = 10px */
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  color: #7777;
+  padding: 3rem;
+  font-size: 1.6rem; }
+
+.header-box__main {
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2.5rem;
+  margin-left: 2rem;
+  font-weight: 700;
+  animation: showFromLeft 1.5s;
+  backface-visibility: hidden; }
+
+.header-box__sec {
+  color: white;
+  display: block;
+  letter-spacing: 1.2rem;
+  margin-left: 0.8rem;
+  font-size: 2.25rem;
+  margin-bottom: 3rem;
+  animation: showFromRight 1.5s;
+  backface-visibility: hidden; }
+
+.about-header {
+  text-align: center;
+  padding: 8rem 0;
+  margin-top: -3rem; }
+  .about-header__text {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    transition: all .5s;
+    display: inline-block;
+    font-weight: 900;
+    background: linear-gradient(0.25turn, #c2e59c, #64b3f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+    .about-header__text:hover {
+      transform: skew(-20deg, -4deg);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.margin-bottom-small {
+  margin-bottom: 1rem; }
+
+.margin-bottom-mid {
+  margin-bottom: 3rem; }
+
+.margin-bottom-big {
+  margin-bottom: 5rem; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  backface-visibility: hidden; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+.btn--white {
+  background: #fff;
+  color: #777;
+  padding: 1rem 3rem;
+  border-radius: 10rem; }
+
+.btn--anim {
+  animation: showFromBottom 2s; }
+
+.btn--small {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  transition: all .5s;
+  color: #777;
+  border-bottom: .2rem solid #777; }
+  .btn--small:hover {
+    background-color: #64b3f4;
+    color: white; }
+
+.header {
+  background: linear-gradient(0.25turn, rgba(194, 229, 156, 0.8), rgba(100, 179, 244, 0.8)), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  background-position: top;
+  background-size: cover;
+  position: relative; }
+  .header__logo {
+    position: absolute;
+    color: white;
+    top: 5rem;
+    left: 5rem; }
+    .header__logo .logo-icon {
+      font-size: 12rem; }
+
+.header-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  margin-bottom: 3rem; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 3rem; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .row .col-1-2 {
+    width: calc((100% - 3rem) / 2); }
+  .row .col-1-3 {
+    width: calc((100% - (2 * 3rem)) / 3); }
+  .row .col-1-4 {
+    width: calc((100% - (3 * 3rem)) / 4); }
+
+.about-galery {
+  position: relative; }
+  .about-galery__photo {
+    width: 50%;
+    transition: all .5s;
+    position: absolute;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5); }
+    .about-galery__photo:hover {
+      transform: scale(1.2);
+      z-index: 1;
+      outline: 0.8rem solid #64b3f4;
+      outline-offset: .8rem; }
+    .about-galery__photo--1 {
+      top: 0;
+      left: 0; }
+    .about-galery__photo--2 {
+      top: 5rem;
+      right: 0; }
+    .about-galery__photo--3 {
+      top: 15rem;
+      left: 30%; }
+  .about-galery:hover .about-galery__photo:not(:hover) {
+    transform: scale(0.8);
+    opacity: .8; }

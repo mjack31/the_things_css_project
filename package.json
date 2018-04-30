@@ -1,0 +1,14 @@
+{
+  "name": "the_things",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-comp": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Jacek",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

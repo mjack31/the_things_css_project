@@ -1,0 +1,61 @@
+/////////////////* CSS boilerplate *////////////////
+html {
+  /* 16px * 62.5% = 10px */
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  color: $spec-grey;
+  padding: 3rem;
+  font-size: 1.6rem;
+}
+/////////////////* CSS boilerplate *////////////////
+
+// parametry textu header boxie
+.header-box {
+  &__main {
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2.5rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    animation: showFromLeft 1.5s;
+    backface-visibility: hidden;
+  }
+  &__sec {
+    color: white;
+    display: block;
+    letter-spacing: 1.2rem;
+    margin-left: 0.8rem;
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+    animation: showFromRight 1.5s;
+    backface-visibility: hidden;
+  }
+}
+
+.about-header {
+  text-align: center;
+  padding: 8rem 0;
+  margin-top: -3rem;
+
+  &__text {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    transition: all .5s;
+    display: inline-block;
+    font-weight: 900;
+    background: linear-gradient(0.25turn, $spec-light, $spec-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &:hover {
+      transform: skew(-20deg, -4deg);
+      text-shadow: .5rem 1rem 2rem rgba(black, .2);
+    }
+  }
+}

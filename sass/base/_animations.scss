@@ -1,0 +1,38 @@
+// animacja - pojawianie się z lewej
+@keyframes showFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// animacja - pojawianie się z prawej
+@keyframes showFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(15rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// animacja - pojawianie się z dołu
+@keyframes showFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(15rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
