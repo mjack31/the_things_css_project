@@ -1,37 +1,11 @@
-.about-galery {
-  position: relative;
+.section-about {
+  margin-top: 8rem;
+}
 
-  &__photo {
-    width: 50%;
-    transition: all .5s;
-    position: absolute;
-    box-shadow: 0 1rem 3rem rgba(black, .5);
-
-    &:hover {
-      transform: scale(1.2);
-      z-index: 1;
-      outline: .8rem solid $spec-dark;
-      outline-offset: .8rem;
-    }
-
-    &--1 {
-      top: 0;
-      left: 0;
-    }
-  
-    &--2 {
-      top: 5rem;
-      right: 0;
-    }
-  
-    &--3 {
-      top: 15rem;
-      left: 30%;
-    }
-  }
-
-  &:hover &__photo:not(:hover) {
-    transform: scale(.8);
-    opacity: .8;
-  }
+.section-features {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  background: linear-gradient(0.25turn, rgba($spec-light, 0.8), rgba($spec-dark, 0.8)), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+  background-size: cover;
+  clip-path: polygon(0 20vh, 100% 0, 100% 80%, 0 100%);
 }

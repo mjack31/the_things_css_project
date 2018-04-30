@@ -65,8 +65,7 @@ body {
 
 .about-header {
   text-align: center;
-  padding: 8rem 0;
-  margin-top: -3rem; }
+  margin-bottom: 6rem; }
   .about-header__text {
     text-transform: uppercase;
     letter-spacing: 1rem;
@@ -124,6 +123,47 @@ body {
     background-color: #64b3f4;
     color: white; }
 
+.feature-box {
+  text-align: center;
+  border-radius: .5rem;
+  background: white;
+  padding: 5rem 2rem;
+  transition: all .5s; }
+  .feature-box:hover {
+    transform: scale(1.1); }
+  .feature-box__icon {
+    font-size: 10rem;
+    display: inline-block;
+    background: linear-gradient(0.25turn, #c2e59c, #64b3f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+
+.about-galery {
+  position: relative; }
+  .about-galery__photo {
+    width: 50%;
+    transition: all .5s;
+    position: absolute;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5); }
+    .about-galery__photo:hover {
+      transform: scale(1.2);
+      z-index: 1;
+      outline: 0.8rem solid #64b3f4;
+      outline-offset: .8rem; }
+    .about-galery__photo--1 {
+      top: 0;
+      left: 0; }
+    .about-galery__photo--2 {
+      top: 5rem;
+      right: 0; }
+    .about-galery__photo--3 {
+      top: 15rem;
+      left: 30%; }
+  .about-galery:hover .about-galery__photo:not(:hover) {
+    transform: scale(0.8);
+    opacity: .8; }
+
 .header {
   background: linear-gradient(0.25turn, rgba(194, 229, 156, 0.8), rgba(100, 179, 244, 0.8)), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
   height: 95vh;
@@ -165,27 +205,12 @@ body {
   .row .col-1-4 {
     width: calc((100% - (3 * 3rem)) / 4); }
 
-.about-galery {
-  position: relative; }
-  .about-galery__photo {
-    width: 50%;
-    transition: all .5s;
-    position: absolute;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5); }
-    .about-galery__photo:hover {
-      transform: scale(1.2);
-      z-index: 1;
-      outline: 0.8rem solid #64b3f4;
-      outline-offset: .8rem; }
-    .about-galery__photo--1 {
-      top: 0;
-      left: 0; }
-    .about-galery__photo--2 {
-      top: 5rem;
-      right: 0; }
-    .about-galery__photo--3 {
-      top: 15rem;
-      left: 30%; }
-  .about-galery:hover .about-galery__photo:not(:hover) {
-    transform: scale(0.8);
-    opacity: .8; }
+.section-about {
+  margin-top: 8rem; }
+
+.section-features {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  background: linear-gradient(0.25turn, rgba(194, 229, 156, 0.8), rgba(100, 179, 244, 0.8)), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+  background-size: cover;
+  clip-path: polygon(0 20vh, 100% 0, 100% 80%, 0 100%); }
