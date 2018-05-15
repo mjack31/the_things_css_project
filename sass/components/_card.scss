@@ -5,6 +5,7 @@
   border-radius: .5rem;
   position: relative;
   overflow: hidden;
+  transition: all 1s;
 
   &__image {
     height: 50%;
@@ -24,6 +25,11 @@
       background: linear-gradient(0.25turn, rgba(#304352, 0.8), rgba(#d7d2cc, 0.8)), url(../img/nugget.jpg);
       background-size: cover;
     }
+  }
+
+  &:hover {
+    transform: rotateY(180deg);
+    perspective: 150rem;
   }
 
   &__header {
