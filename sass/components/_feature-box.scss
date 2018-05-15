@@ -4,6 +4,7 @@
   background: white;
   padding: 5rem 2rem;
   transition: all .5s;
+  box-shadow: 0 1rem 2rem rgba(black, .1);
 
   &:hover {
     transform: scale(1.1);
@@ -16,9 +17,5 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-  }
-
-  &__paragraph {
-
   }
 }
