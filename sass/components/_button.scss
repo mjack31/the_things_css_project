@@ -4,7 +4,6 @@
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    backface-visibility: hidden;
   }
 
   &:hover {
@@ -25,6 +24,7 @@
   }
 
   &--anim {
+    backface-visibility: hidden;
     animation: showFromBottom 2s;
   }
 
