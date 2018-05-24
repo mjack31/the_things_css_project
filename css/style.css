@@ -239,6 +239,29 @@ body {
     transform: scale(0.8);
     opacity: .8; }
 
+.comment {
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  margin: 5rem auto;
+  padding: 5rem;
+  border-radius: .5rem;
+  transform: skewX(8deg); }
+  .comment__fig {
+    height: 12rem;
+    width: 12rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-2rem) skewX(-8deg); }
+  .comment__img {
+    height: 100%;
+    transform: skewX(-8deg); }
+  .comment__caption {
+    transform: skewX(-8deg); }
+  .comment__text {
+    transform: skewX(-8deg); }
+
 .header {
   background: linear-gradient(0.25turn, rgba(194, 229, 156, 0.8), rgba(100, 179, 244, 0.8)), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
   height: 95vh;
@@ -302,3 +325,6 @@ body {
   padding-top: 20rem;
   margin-bottom: -14rem;
   padding-bottom: 16rem; }
+
+.section-comments {
+  margin-top: 20rem; }

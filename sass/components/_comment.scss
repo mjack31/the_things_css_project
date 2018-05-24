@@ -1,0 +1,31 @@
+.comment {
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(black, .5);
+  margin: 5rem auto;
+  padding: 5rem;
+  border-radius: .5rem;
+  transform: skewX(8deg);
+  
+  &__fig {
+    height: 12rem;
+    width: 12rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-2rem) skewX(-8deg);
+  }
+
+  &__img {
+    height: 100%;
+    transform: skewX(-8deg);
+  }
+
+  &__caption {
+    transform: skewX(-8deg);
+  }
+
+  &__text {
+    transform: skewX(-8deg);
+  }
+}
