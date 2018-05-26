@@ -6,11 +6,22 @@
   padding: 5rem;
   border-radius: .5rem;
   transform: skewX(8deg);
+
+  &:hover &__img {
+    filter: blur(4px) brightness(90%);
+    transform: scale(1);
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translateY(-8rem);
+  }
   
   &__fig {
     height: 12rem;
     width: 12rem;
     float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2rem) skewX(-8deg);
@@ -18,11 +29,17 @@
 
   &__img {
     height: 100%;
-    transform: skewX(-8deg);
+    transform: scale(1.2);
+    transition: all .5s;
   }
 
   &__caption {
-    transform: skewX(-8deg);
+    transform: translateY(-6rem);
+    color: white;
+    text-shadow: 0 1rem 3rem rgba(black, .5);
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
   }
 
   &__text {

@@ -63,10 +63,10 @@ body {
   animation: showFromRight 1.5s;
   backface-visibility: hidden; }
 
-.about-header {
+.section-header {
   text-align: center;
   margin-bottom: 6rem; }
-  .about-header__text {
+  .section-header__text {
     text-transform: uppercase;
     letter-spacing: 1rem;
     transition: all .5s;
@@ -76,7 +76,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
-    .about-header__text:hover {
+    .section-header__text:hover {
       transform: skew(-20deg, -4deg);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
@@ -247,18 +247,31 @@ body {
   padding: 5rem;
   border-radius: .5rem;
   transform: skewX(8deg); }
+  .comment:hover .comment__img {
+    filter: blur(4px) brightness(90%);
+    transform: scale(1); }
+  .comment:hover .comment__caption {
+    opacity: 1;
+    transform: translateY(-8rem); }
   .comment__fig {
     height: 12rem;
     width: 12rem;
     float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2rem) skewX(-8deg); }
   .comment__img {
     height: 100%;
-    transform: skewX(-8deg); }
+    transform: scale(1.2);
+    transition: all .5s; }
   .comment__caption {
-    transform: skewX(-8deg); }
+    transform: translateY(-6rem);
+    color: white;
+    text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0;
+    transition: all .5s; }
   .comment__text {
     transform: skewX(-8deg); }
 
@@ -327,4 +340,5 @@ body {
   padding-bottom: 16rem; }
 
 .section-comments {
-  margin-top: 20rem; }
+  background-color: #f7f7f7;
+  padding-top: 10rem; }
