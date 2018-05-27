@@ -25,7 +25,7 @@
         <span class="header-box__main">The Things</span>
         <span class="header-box__sec">things are awesome</span>
       </h1>
-      <a class="btn btn--white btn--anim" href="#">Go and start!</a>
+      <a class="btn btn--white btn--anim btn--centred" href="#">Go and start!</a>
     </div>
   </header>
   <main>
@@ -110,10 +110,10 @@
               </div>
               <h4 class="card__header card__header">
                 <span class="card__header-span card__header-span--1">
-                  Third great Thing
+                  First great Thing
                 </span>
                 <span class="card__header-span card__header-span--1">
-                  Nuggets
+                  Pizza
                 </span>
               </h4>
               <ul class="card__features">
@@ -135,10 +135,10 @@
               </div>
               <h4 class="card__header card__header">
                 <span class="card__header-span card__header-span--2">
-                  Third great Thing
+                  Secound great Thing
                 </span>
                 <span class="card__header-span card__header-span--2">
-                  Nuggets
+                  Meat
                 </span>
               </h4>
               <ul class="card__features">
@@ -183,9 +183,9 @@
     </section>
     <section class="section-comments">
       <div class="video-container">
-        <video class="video-container__video" autoplay loop>
-          <source src="./img/video.mp4" type="video/mp4">
+        <video class="video-container__video" autoplay loop muted>
           <source src="./img/video.webm" type="video/webm">
+          <source src="./img/video.mp4" type="video/mp4">
         </video>
       </div>
       <div class="section-header">
@@ -246,6 +246,21 @@
         </div>
       </div>
       <a href="#" class="btn btn--small btn--centred margin-bottom-mid">Learn more &rarr;</a>
+    </section>
+    <section class="section-newsletter">
+      <div class="row">
+        <div class="newsletter-container">
+          <div class="section-header section-header__text--notcentred">
+            <h2 class="section-header__text">Join newsletter</h2>
+          </div>
+          <form action="#" class="newsletter-form">
+            <input type="text" name="name" id="name" placeholder="Full name" class="newsletter-form__input">
+            <label for="name" class="newsletter-form__label">Full name</label>
+            <input type="email" name="enamil" id="email" placeholder="E-mail" class="newsletter-form__input">
+            <label for="email" class="newsletter-form__label">E-mail:</label>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 </body>

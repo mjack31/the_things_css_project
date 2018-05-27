@@ -72,7 +72,7 @@ body {
     transition: all .5s;
     display: inline-block;
     font-weight: 900;
-    background: linear-gradient(0.25turn, #c2e59c, #64b3f4);
+    background: linear-gradient(0.25turn, #64b3f4, #64b3f4);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
@@ -81,6 +81,10 @@ body {
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
     .section-header__text--black {
       color: black; }
+    .section-header__text--notcentred {
+      margin-bottom: 0;
+      text-align: left;
+      padding: 3rem 12rem; }
 
 .margin-bottom-small {
   margin-bottom: 1rem; }
@@ -238,6 +242,19 @@ body {
     -webkit-background-clip: text;
     color: transparent; }
 
+.newsletter-form {
+  padding: 0 12rem; }
+  .newsletter-form__label {
+    display: block;
+    margin-bottom: 1rem;
+    transform: translateY(-3rem);
+    opacity: 0;
+    transition: all .8s; }
+  .newsletter-form__input {
+    display: block;
+    height: 4rem;
+    width: 25rem; }
+
 .about-galery {
   position: relative; }
   .about-galery__photo {
@@ -366,3 +383,13 @@ body {
   padding-top: 6rem;
   padding-bottom: 2rem;
   position: relative; }
+
+.section-newsletter {
+  background: linear-gradient(0.25turn, rgba(194, 229, 156, 0.8), rgba(100, 179, 244, 0.8));
+  padding: 25rem 0; }
+  .section-newsletter .newsletter-container {
+    background: linear-gradient(0.3turn, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+    background-size: cover;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+    height: 40rem;
+    border-radius: .8rem; }
