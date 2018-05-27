@@ -3,7 +3,9 @@
   &:visited {
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
+    text-align: center;
+    display: block;
+    width: 20rem;
   }
 
   &:hover {
@@ -40,5 +42,11 @@
       background-color: $spec-dark;
       color: white;
     }
+  }
+
+  &--centred {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
