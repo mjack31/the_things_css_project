@@ -254,10 +254,29 @@
             <h2 class="section-header__text">Join newsletter</h2>
           </div>
           <form action="#" class="newsletter-form">
-            <input type="text" name="name" id="name" placeholder="Full name" class="newsletter-form__input">
-            <label for="name" class="newsletter-form__label">Full name</label>
-            <input type="email" name="enamil" id="email" placeholder="E-mail" class="newsletter-form__input">
-            <label for="email" class="newsletter-form__label">E-mail:</label>
+            <div class="form-duo">
+                <input type="text" name="name" id="name" placeholder="Full name" class="form-duo__input" required>
+                <label for="name" class="form-duo__label">Full name</label>
+            </div>
+            <div class="form-duo">
+                <input type="email" name="enamil" id="email" placeholder="E-mail address" class="form-duo__input" required>
+                <label for="email" class="form-duo__label">E-mail address</label>
+            </div>
+            <div class="form-duo form-duo--radio">
+              <input type="radio" name="newsletter_opt" id="all-things" class="form-duo__radio">
+              <label for="all-things" class="form-duo__radio-label">
+                <span class="form-duo__new-radio"></span>
+                All Things
+              </label>
+            </div>
+            <div class="form-duo form-duo--radio">
+              <input type="radio" name="newsletter_opt" id="few-things" class="form-duo__radio">      
+              <label for="few-things" class="form-duo__radio-label">
+                <span class="form-duo__new-radio"></span>
+                Few Things
+              </label>
+            </div>
+            <button class="btn btn--white btn--submit">Join!</button>
           </form>
         </div>
       </div>
