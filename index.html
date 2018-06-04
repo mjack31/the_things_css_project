@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__logo">
       <i class="fas fa-gem logo-icon"></i>
     </div>
@@ -29,7 +29,7 @@
     </div>
   </header>
   <main>
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="section-header">
         <h2 class="section-header__text">Check out some our Things!</h2>
       </div>
@@ -54,7 +54,7 @@
         </div>
       </div>
     </section>
-    <section class="section-features">
+    <section class="section-features" id="features">
       <div class="row">
         <div class="col-1-4">
           <div class="feature-box">
@@ -98,7 +98,7 @@
         </div>
       </div>
     </section>
-    <section class="section-cards">
+    <section class="section-cards" id="things">
       <div class="section-header">
         <h2 class="section-header__text">Our best Things:</h2>
       </div>
@@ -181,7 +181,7 @@
       </div>
       <a href="#" class="btn btn--small btn--centred .margin-top-small">Learn more &rarr;</a>
     </section>
-    <section class="section-comments">
+    <section class="section-comments" id="comments">
       <div class="video-container">
         <video class="video-container__video" autoplay loop muted>
           <source src="./img/video.webm" type="video/webm">
@@ -247,7 +247,7 @@
       </div>
       <a href="#" class="btn btn--small btn--centred margin-bottom-mid">Learn more &rarr;</a>
     </section>
-    <section class="section-newsletter">
+    <section class="section-newsletter" id="newsletter">
       <div class="row">
         <div class="newsletter-container">
           <div class="section-header section-header__text--notcentred">
@@ -282,6 +282,28 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer__logo-container">
+      <i class="fas fa-gem footer__logo"></i>
+      <h3 class="footer__logo-cap">The Things</h3>
+    </div>
+    <div class="row">
+      <div class="col-1-2">
+        <ul class="footer__navbar">
+          <li class="footer__nav-item"><a href="#top">Header</a></li>
+          <li class="footer__nav-item"><a href="#about">About</a></li>
+          <li class="footer__nav-item"><a href="#features">Features</a></li>
+          <li class="footer__nav-item"><a href="#things">Things</a></li>
+          <li class="footer__nav-item"><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="col-1-2">
+        <p class="footer__copyright">
+            Built by Jacek Majer for learning purposes. Copyright © by Jacek Majer. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original designer, Jonas Schmedtmann, is of course highly appreciated!
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
