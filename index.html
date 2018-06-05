@@ -12,10 +12,38 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/png" href="img/icon-v2.png">
 
-  <title>TheThings | Exciting things for everyone</title>
+  <title>TheThings | Exciting Things for everyone</title>
 </head>
 
 <body>
+  <div class="nav">
+    <input type="checkbox" class="nav__checkbox" id="checkbox">
+    <label for="checkbox" class="nav__check-label">
+      <div class="nav__button"></div>
+    </label>
+    <div class="nav__background">
+    </div>
+    <nav class="nav__container">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#top">Header</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#features">Features</a>
+        </li>
+        <li class="nav__item">
+          <a href="#things">Things</a>
+        </li>
+        <li class="nav__item">
+          <a href="#newsletter">Newsletter</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
   <header class="header" id="header">
     <div class="header__logo">
       <i class="fas fa-gem logo-icon"></i>
@@ -255,12 +283,12 @@
           </div>
           <form action="#" class="newsletter-form">
             <div class="form-duo">
-                <input type="text" name="name" id="name" placeholder="Full name" class="form-duo__input" required>
-                <label for="name" class="form-duo__label">Full name</label>
+              <input type="text" name="name" id="name" placeholder="Full name" class="form-duo__input" required>
+              <label for="name" class="form-duo__label">Full name</label>
             </div>
             <div class="form-duo">
-                <input type="email" name="enamil" id="email" placeholder="E-mail address" class="form-duo__input" required>
-                <label for="email" class="form-duo__label">E-mail address</label>
+              <input type="email" name="enamil" id="email" placeholder="E-mail address" class="form-duo__input" required>
+              <label for="email" class="form-duo__label">E-mail address</label>
             </div>
             <div class="form-duo form-duo--radio">
               <input type="radio" name="newsletter_opt" id="all-things" class="form-duo__radio">
@@ -270,7 +298,7 @@
               </label>
             </div>
             <div class="form-duo form-duo--radio">
-              <input type="radio" name="newsletter_opt" id="few-things" class="form-duo__radio">      
+              <input type="radio" name="newsletter_opt" id="few-things" class="form-duo__radio">
               <label for="few-things" class="form-duo__radio-label">
                 <span class="form-duo__new-radio"></span>
                 Few Things
@@ -290,16 +318,28 @@
     <div class="row">
       <div class="col-1-2">
         <ul class="footer__navbar">
-          <li class="footer__nav-item"><a href="#top">Header</a></li>
-          <li class="footer__nav-item"><a href="#about">About</a></li>
-          <li class="footer__nav-item"><a href="#features">Features</a></li>
-          <li class="footer__nav-item"><a href="#things">Things</a></li>
-          <li class="footer__nav-item"><a href="#newsletter">Newsletter</a></li>
+          <li class="footer__nav-item">
+            <a href="#top">Header</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#features">Features</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#things">Things</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#newsletter">Newsletter</a>
+          </li>
         </ul>
       </div>
       <div class="col-1-2">
         <p class="footer__copyright">
-            Built by Jacek Majer for learning purposes. Copyright © by Jacek Majer. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original designer, Jonas Schmedtmann, is of course highly appreciated!
+          Built by Jacek Majer for learning purposes. Copyright © by Jacek Majer. You are 100% allowed to use this webpage for both
+          personal and commercial use, but NOT to claim it as your own design. A credit to the original designer, Jonas Schmedtmann,
+          is of course highly appreciated!
         </p>
       </div>
     </div>

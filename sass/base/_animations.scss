@@ -36,3 +36,16 @@
     transform: translateY(0);
   }
 }
+
+//animacja - wjazd navbara z prawej
+@keyframes showNavFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+}

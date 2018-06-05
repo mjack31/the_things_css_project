@@ -1,0 +1,72 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  &__background {
+    position: fixed;
+    top: 8rem;
+    right: 8rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: radial-gradient($spec-light, $spec-dark);
+    transition: all .8s;
+  }
+
+  &__container {
+
+  }
+
+  &__list {
+    list-style: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(200%);
+    text-align: center;
+    z-index: 15;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  &__item {
+    a:link,
+    a:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 3.5rem;
+      color: white;
+      display: inline-block;
+      padding: 1rem;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    position: fixed;
+    top: 8rem;
+    right: 8rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    z-index: 20;
+    background: white;
+    text-align: center;
+    padding: 1.2rem;
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__container &__list {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

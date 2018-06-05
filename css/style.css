@@ -22,6 +22,14 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes showNavFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(4rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(1rem); } }
+
 *,
 *::before,
 *::after {
@@ -471,6 +479,58 @@ body {
     content: "";
     clear: both;
     display: table; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+  .nav__background {
+    position: fixed;
+    top: 8rem;
+    right: 8rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: radial-gradient(#c2e59c, #64b3f4);
+    transition: all .8s; }
+  .nav__list {
+    list-style: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(200%);
+    text-align: center;
+    z-index: 15;
+    opacity: 0;
+    transition: all .5s; }
+  .nav__item a:link,
+  .nav__item a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: white;
+    display: inline-block;
+    padding: 1rem; }
+  .nav__checkbox {
+    display: none; }
+  .nav__button {
+    position: fixed;
+    top: 8rem;
+    right: 8rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    z-index: 20;
+    background: white;
+    text-align: center;
+    padding: 1.2rem; }
+  .nav__checkbox:checked ~ .nav__background {
+    transform: scale(80); }
+  .nav__checkbox:checked ~ .nav__container .nav__list {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%); }
 
 .section-about {
   margin-top: -14rem;
