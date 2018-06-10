@@ -22,14 +22,6 @@
     opacity: 1;
     transform: translateY(0); } }
 
-@keyframes showNavFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(4rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(1rem); } }
-
 *,
 *::before,
 *::after {
@@ -38,7 +30,9 @@
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #7777;
+  padding: 3rem; }
 
 html {
   /* 16px * 62.5% = 10px */
@@ -47,8 +41,6 @@ html {
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.7;
-  color: #7777;
-  padding: 3rem;
   font-size: 1.6rem; }
 
 .header-box__main {
@@ -303,10 +295,7 @@ body {
 
 .form-duo {
   margin-bottom: 1rem;
-  position: relative;
-  /* FF 4-18 */
-  /* FF 19+ */
-  /* IE 10+ */ }
+  position: relative; }
   .form-duo--radio {
     width: 40%;
     display: inline-block;

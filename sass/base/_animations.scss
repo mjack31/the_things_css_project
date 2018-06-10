@@ -1,4 +1,4 @@
-// animacja - pojawianie się z lewej
+// show from the left
 @keyframes showFromLeft {
   0% {
     opacity: 0;
@@ -11,7 +11,7 @@
   }
 }
 
-// animacja - pojawianie się z prawej
+// show from the right
 @keyframes showFromRight {
   0% {
     opacity: 0;
@@ -24,7 +24,7 @@
   }
 }
 
-// animacja - pojawianie się z dołu
+// show from the bottom
 @keyframes showFromBottom {
   0% {
     opacity: 0;
@@ -34,18 +34,5 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-//animacja - wjazd navbara z prawej
-@keyframes showNavFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(4rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(1rem);
   }
 }

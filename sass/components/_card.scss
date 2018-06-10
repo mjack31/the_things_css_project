@@ -21,7 +21,7 @@
     }
 
     &--back {
-      transform: rotateY(180deg); //bardzo ważne dla działania
+      transform: rotateY(180deg); //very important to work properly
       text-align: center;
 
       &-1 {
@@ -104,32 +104,3 @@
     margin-top: 20rem;
   }
 }
-
-// .card-test {
-//   perspective: 150rem;
-//   position: relative;
-//   height: 50rem;
-//   &__side {
-//     height: 50rem;
-//     width: 100%;
-//     color: white;
-//     position: absolute;
-//     transition: all 1s;
-//     top: 0;
-//     left:0;
-//     backface-visibility: hidden;
-//     &--front {
-//       background-color: red;
-//     }
-//     &--back {
-//       background-color: blue;
-//       transform: rotateY(180deg);
-//     }
-//   }
-//   &:hover &__side--front {
-//     transform: rotateY(-180deg);
-//   }
-//   &:hover &__side--back {
-//     transform: rotateY(0deg);
-//   } 
-// }

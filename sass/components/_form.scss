@@ -93,23 +93,19 @@
   }
 
 
-
-
-
   &__input:focus::-webkit-input-placeholder {
     color: transparent;
   }
+
   &__input:focus:-moz-placeholder {
     color: transparent;
   }
-  /* FF 4-18 */
+
   &__input:focus::-moz-placeholder {
     color: transparent;
   }
-  /* FF 19+ */
+
   &__input:focus:-ms-input-placeholder {
     color: transparent;
   }
-  /* IE 10+ */
-  // Dodatkowo można wykorzystać selektor input:placeholder-shown
 }

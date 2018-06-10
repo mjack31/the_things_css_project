@@ -1,4 +1,4 @@
-// układ headera
+// header structure
 .header {
   background: linear-gradient(0.25turn, rgba($spec-light, 0.8), rgba($spec-dark, 0.8)), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
   height: 95vh;
@@ -18,7 +18,7 @@
   }
 }
 
-// pozycja boxa
+// box position
 .header-box {
   position: absolute;
   top: 45%;

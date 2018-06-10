@@ -7,13 +7,11 @@ html {
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.7;
-  color: $spec-grey;
-  padding: 3rem;
   font-size: 1.6rem;
 }
 /////////////////* CSS boilerplate *////////////////
 
-// parametry textu header boxie
+
 .header-box {
   &__main {
     color: white;
