@@ -11,5 +11,9 @@ body {
   box-sizing: border-box;
   color: $spec-grey;
   padding: 3rem;
+
+  @include mq(m) {
+    padding: 0;
+  }
 }
 /////////////////* CSS boilerplate *////////////////

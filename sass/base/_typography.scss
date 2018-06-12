@@ -1,7 +1,19 @@
 /////////////////* CSS boilerplate *////////////////
 html {
   /* 16px * 62.5% = 10px */
-  font-size: 62.5%; 
+  font-size: 62.5%;
+  
+  @include mq(xl) {
+    font-size: 58%;
+  }
+
+  @include mq(l) {
+    font-size: 54%;
+  }
+
+  @include mq(m) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -22,7 +34,12 @@ body {
     font-weight: 700;
     animation: showFromLeft 1.5s;
     backface-visibility: hidden;
+
+    @include mq(s) {
+      letter-spacing: .5rem;
+    }
   }
+
   &__sec {
     color: white;
     display: block;
@@ -32,6 +49,10 @@ body {
     margin-bottom: 3rem;
     animation: showFromRight 1.5s;
     backface-visibility: hidden;
+
+    @include mq(s) {
+      letter-spacing: .5rem;
+    }
   }
 }
 
@@ -50,6 +71,10 @@ body {
     -webkit-background-clip: text;
     color: transparent;
 
+    @include mq(s) {
+      letter-spacing: .5rem;
+    }
+
     &:hover {
       transform: skew(-20deg, -4deg);
       text-shadow: .5rem 1rem 2rem rgba(black, .2);
@@ -63,6 +88,10 @@ body {
       margin-bottom: 0;
       text-align: left;
       padding: 3rem 10rem;
+
+      @include mq(l) {
+        padding: 3rem 5rem;
+      }
     }
   }
 }

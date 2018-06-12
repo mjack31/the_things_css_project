@@ -3,8 +3,17 @@
   margin: 0 auto;
   margin-bottom: $row-spacing;
 
+  @include mq(l) {
+    max-width: 80%;
+  }
+
   [class^="col-"] {
     float: left;
+
+    @include mq(l) {
+      width: 100% !important;
+    }
+
     &:not(:last-child) {
       margin-right: $col-spacing;
     }

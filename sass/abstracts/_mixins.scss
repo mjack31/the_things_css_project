@@ -5,3 +5,36 @@
     display: table;
   }
 }
+
+//RWD
+@mixin mq($var) { // em = width(px) / 16px
+  @if $var == xs {
+    @media (max-width: 21.875em) { //350px
+      @content
+    };
+  }
+
+  @if $var == s {
+    @media (max-width: 37.5em) { //600px
+      @content
+    };
+  }
+
+  @if $var == m {
+    @media (max-width: 56.25em) { //900px
+      @content
+    };
+  }
+
+  @if $var == l {
+    @media (max-width: 71.875em) { //1150px
+      @content
+    };
+  }
+
+  @if $var == xl {
+    @media (max-width: 78.125em) { //1250px
+      @content
+    };
+  }
+}

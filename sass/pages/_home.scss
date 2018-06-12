@@ -4,6 +4,10 @@
   margin-bottom: -14rem;
   padding-bottom: 16rem;
   background-color: #f7f7f7;
+
+  @include mq(l) {
+    padding-bottom: 60rem;
+  }
 }
 
 .section-features {

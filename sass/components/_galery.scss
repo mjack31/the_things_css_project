@@ -7,11 +7,19 @@
     position: absolute;
     box-shadow: 0 1rem 3rem rgba(black, .5);
 
+    @include mq(l) {
+      width: 45%;
+    }
+
     &:hover {
       transform: scale(1.2);
       z-index: 1;
       outline: .8rem solid $spec-dark;
       outline-offset: .8rem;
+
+      @include mq(l) {
+        transform: scale(1.1);
+      }
     }
 
     &--1 {
