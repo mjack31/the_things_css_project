@@ -12,6 +12,7 @@
 
     @include mq(l) {
       width: 100% !important;
+      margin-bottom: 5rem;
     }
 
     &:not(:last-child) {

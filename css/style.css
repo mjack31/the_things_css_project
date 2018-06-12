@@ -548,7 +548,8 @@ body {
     float: left; }
     @media (max-width: 71.875em) {
       .row [class^="col-"] {
-        width: 100% !important; } }
+        width: 100% !important;
+        margin-bottom: 5rem; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 3rem; }
   .row .col-1-2 {
