@@ -1,6 +1,10 @@
 .newsletter-form {
   margin-left: 3rem;
   width: 50%;
+
+  @include mq(m) {
+    width: 100%;
+  }
 }
 
 .form-duo {

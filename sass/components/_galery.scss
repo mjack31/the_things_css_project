@@ -11,6 +11,11 @@
       width: 45%;
     }
 
+    @include mq(s) {
+      width: 100%;
+      position: relative;
+    }
+
     &:hover {
       transform: scale(1.2);
       z-index: 1;
@@ -20,26 +25,53 @@
       @include mq(l) {
         transform: scale(1.1);
       }
+
+      @include mq(s) {
+        transform: scale(1);
+        z-index: 1;
+        outline: none;
+        outline-offset: 0;
+      }
     }
 
     &--1 {
       top: 0;
       left: 0;
+
+      @include mq(s) {
+        top: 0;
+        left: 0;
+      }
     }
   
     &--2 {
       top: 5rem;
       right: 0;
+
+      @include mq(s) {
+        top: 0;
+        left: 0;
+      }
     }
   
     &--3 {
       top: 15rem;
       left: 30%;
+
+      @include mq(s) {
+        top: 0;
+        left: 0;
+      }
     }
   }
 
   &:hover &__photo:not(:hover) {
     transform: scale(.8);
     opacity: .8;
+
+    @include mq(s) {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 }

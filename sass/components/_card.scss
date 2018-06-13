@@ -3,6 +3,11 @@
   height: 50rem;
   perspective: 150rem;
 
+  @include mq(m) {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
 
   &__side {
     height: 50rem;
@@ -71,6 +76,10 @@
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
+
+    @include mq(l) {
+      top: 25%;
+    }
   }
 
   &__header-span {

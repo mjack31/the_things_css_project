@@ -7,6 +7,14 @@
   border-radius: .5rem;
   transform: skewX(8deg);
 
+  @include mq(m) {
+    transform: skewX(0deg);
+  }
+
+  @include mq(s) {
+    width: 100%;
+  }
+
   &:hover &__img {
     filter: blur(4px) brightness(90%);
     transform: scale(1);
@@ -25,6 +33,10 @@
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-2rem) skewX(-8deg);
+
+    @include mq(m) {
+      transform: translateX(-2rem) skewX(0deg);
+    }
   }
 
   &__img {
@@ -44,5 +56,9 @@
 
   &__text {
     transform: skewX(-8deg);
+
+    @include mq(m) {
+      transform: skewX(0deg);
+    }
   }
 }

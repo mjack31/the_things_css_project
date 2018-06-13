@@ -8,8 +8,14 @@
 
 //RWD
 @mixin mq($var) { // em = width(px) / 16px
+  @if $var == xxs {
+    @media (max-width: 22.8125em) { //365px
+      @content
+    };
+  }
+
   @if $var == xs {
-    @media (max-width: 21.875em) { //350px
+    @media (max-width: 28.125em) { //450px
       @content
     };
   }

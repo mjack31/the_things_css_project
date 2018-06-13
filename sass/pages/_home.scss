@@ -1,12 +1,20 @@
 .section-about {
   margin-top: -14rem;
-  padding-top: 16rem;
+  padding-top: 14rem;
   margin-bottom: -14rem;
   padding-bottom: 16rem;
   background-color: #f7f7f7;
 
   @include mq(l) {
-    padding-bottom: 60rem;
+    padding-bottom: 50rem;
+  }
+
+  @include mq(m) {
+    padding-bottom: 48rem;
+  }
+
+  @include mq(s) {
+    padding-bottom: 8rem;
   }
 }
 
@@ -18,6 +26,41 @@
   height: 90rem;
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+
+  @include mq(l) {
+    padding-top: 16rem;
+    padding-bottom: 18rem;
+    height: 110rem;
+    clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+  }
+
+  @include mq(m) {
+    padding-top: 17rem;
+    padding-bottom: 20rem;
+    height: 115rem;
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+  }
+
+  @include mq(s) {
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    height: 180rem;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  }
+
+  @include mq(xs) {
+      padding-top: 12rem;
+      padding-bottom: 18rem;
+      height: 190rem;
+      clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+  }
+
+  @include mq(xxs) {
+    padding-top: 13rem;
+    padding-bottom: 18rem;
+    height: 200rem;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+  }
 }
 
 .section-cards {
