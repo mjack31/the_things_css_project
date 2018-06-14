@@ -80,11 +80,37 @@
   background: linear-gradient(0.25turn, rgba($spec-light, 0.8), rgba($spec-dark, 0.8));
   padding: 25rem 0;
 
+  @include mq(m) {
+    padding: 15rem 0;
+  }
+
+  @include mq(s) {
+    padding: 10rem 0;
+  }
+
+  @include mq(xs) {
+    padding: 7rem 0;
+  }
+
   .newsletter-container {
-    background: linear-gradient(0.30turn, rgba(white, 0.8) 50%, transparent 50%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+    background: linear-gradient(0.30turn, rgba(white, 0.8) 60%, transparent 60%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
     background-size: cover;
     box-shadow: 0 1rem 3rem rgba(black, .5);
     height: 40rem;
     border-radius: .8rem;
+
+    @include mq(m) {
+      background: linear-gradient(0.30turn, rgba(white, 0.8) 70%, transparent 70%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+      background-size: cover;
+    }
+
+    @include mq(s) {
+      background: linear-gradient(0.30turn, rgba(white, 0.8) 100%, transparent 100%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+      background-size: cover;
+    }
+
+    @include mq(xs) {
+      height: 47rem;
+    }
   }
 }

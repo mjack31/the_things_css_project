@@ -1,9 +1,13 @@
 .newsletter-form {
-  margin-left: 3rem;
+  margin: 0 5%;
   width: 50%;
 
   @include mq(m) {
-    width: 100%;
+    width: 60%;
+  }
+
+  @include mq(s) {
+    width: 90%;
   }
 }
 
@@ -16,10 +20,17 @@
     display: inline-block;
     margin-left: 1rem;
     margin-bottom: 3.2rem;
+
+    @include mq(xs) {
+      width: 100%;
+      display: block;
+      margin-left: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   &__input {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
     display: block;
     border: none;

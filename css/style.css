@@ -333,11 +333,14 @@ body {
     color: transparent; }
 
 .newsletter-form {
-  margin-left: 3rem;
+  margin: 0 5%;
   width: 50%; }
   @media (max-width: 56.25em) {
     .newsletter-form {
-      width: 100%; } }
+      width: 60%; } }
+  @media (max-width: 37.5em) {
+    .newsletter-form {
+      width: 90%; } }
 
 .form-duo {
   margin-bottom: 1rem;
@@ -347,8 +350,14 @@ body {
     display: inline-block;
     margin-left: 1rem;
     margin-bottom: 3.2rem; }
+    @media (max-width: 28.125em) {
+      .form-duo--radio {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-bottom: 3rem; } }
   .form-duo__input {
-    width: 80%;
+    width: 100%;
     padding: 1rem;
     display: block;
     border: none;
@@ -483,24 +492,42 @@ body {
   visibility: hidden;
   transition: all .5s; }
   .pop-up__window {
-    width: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 95%;
+    max-width: 125rem;
+    height: 65vh;
     transform: translate(-50%, -50%) scale(0.2);
     background-color: white;
     overflow: hidden;
     border-radius: .4rem;
     transition: all .2s .2s; }
   .pop-up__left {
-    width: 33.3333%; }
+    width: 33.3333%;
+    height: 100%;
+    float: left; }
+    @media (max-width: 37.5em) {
+      .pop-up__left {
+        display: none; } }
   .pop-up__right {
     width: 66.6666%;
-    margin-left: 33.3333%;
-    padding: 4rem; }
-  .pop-up__img {
+    padding: 4rem;
+    height: 100%;
+    overflow: auto; }
+    @media (max-width: 37.5em) {
+      .pop-up__right {
+        width: 100%; } }
+  .pop-up__img--1 {
+    background: url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+    background-size: cover;
     width: 100%;
-    float: left; }
+    height: 50%; }
+  .pop-up__img--2 {
+    background: url(../img/igor-ovsyannykov-530795-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50%; }
   .pop-up__close-btn {
     position: absolute;
     top: 1rem;
@@ -838,9 +865,29 @@ body {
 .section-newsletter {
   background: linear-gradient(0.25turn, rgba(194, 229, 156, 0.8), rgba(100, 179, 244, 0.8));
   padding: 25rem 0; }
+  @media (max-width: 56.25em) {
+    .section-newsletter {
+      padding: 15rem 0; } }
+  @media (max-width: 37.5em) {
+    .section-newsletter {
+      padding: 10rem 0; } }
+  @media (max-width: 28.125em) {
+    .section-newsletter {
+      padding: 7rem 0; } }
   .section-newsletter .newsletter-container {
-    background: linear-gradient(0.3turn, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+    background: linear-gradient(0.3turn, rgba(255, 255, 255, 0.8) 60%, transparent 60%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
     background-size: cover;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
     height: 40rem;
     border-radius: .8rem; }
+    @media (max-width: 56.25em) {
+      .section-newsletter .newsletter-container {
+        background: linear-gradient(0.3turn, rgba(255, 255, 255, 0.8) 70%, transparent 70%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+        background-size: cover; } }
+    @media (max-width: 37.5em) {
+      .section-newsletter .newsletter-container {
+        background: linear-gradient(0.3turn, rgba(255, 255, 255, 0.8) 100%, transparent 100%), url(../img/igor-ovsyannykov-530800-unsplash.jpg);
+        background-size: cover; } }
+    @media (max-width: 28.125em) {
+      .section-newsletter .newsletter-container {
+        height: 47rem; } }
