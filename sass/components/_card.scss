@@ -69,7 +69,7 @@
   &__header {
     position: absolute;
     top: 30%;
-    left: 0;
+    right: 0;
     color: white;
     padding: 1rem;
     font-size: 2.7rem;
@@ -84,17 +84,15 @@
 
   &__header-span {
     padding: 1rem;
+
     &--1 {
       background: linear-gradient(0.25turn, rgba(#EF629F, 0.8), rgba(#EECDA3, 0.8));
-      width: 60%;
     }
     &--2 {
       background: linear-gradient(0.25turn, rgba($spec-light, 0.8), rgba($spec-dark, 0.8));
-      width: 60%;
     }
     &--3 {
       background: linear-gradient(0.25turn, rgba(#304352, 0.8), rgba(#d7d2cc, 0.8));
-      width: 60%;
     }
   }
 
